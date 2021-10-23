@@ -1,0 +1,39 @@
+:root{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+    /* Colors */
+    --eggshell : #FAF3DD;
+    --aeroBlue : #B8F2E6;
+    --powderBlue: #AED9E0;
+    --blackCoral: #5e6472; 
+    --brown: #D7A37B;
+}
+
+body{
+    background-image: url(/bg-faded-music.png);
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo h1{
+    color: var(--blackCoral);
+    font-size: 3rem;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+iframe{
+    border-radius: 20px;
+    box-shadow:2px 2px 20px rgb(206, 197, 197);
+}
+
+.illustration img{
+    width: 32rem;
+}
