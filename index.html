@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Monke</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/logo.png">
+
+  <!-- Link the fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Link the CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <h1>Zen Monke</h1>
+    </div>
+    <div class="hamburgerIcon" onclick="handler(this)">
+      <p class="bar1"></p>
+      <p class="bar2"></p>
+      <p class="bar3"></p>
+    </div>
+    <ul class="navlist">
+      <li class="listItem">Activities</li>
+      <li class="listItem">More Info</li>
+      <li class="listItem">Resources</li>
+    </ul>
+    <div class="buttons">
+      <button id="login" class="navbarButtons">Login</button>
+      <button id="signUp" class="navbarButtons">Sign Up</button>
+    </div>
+  </nav>
+
+  <header class="header">
+    <article class="content">
+      <h2><span class="colored">Zen Monke</span> is here to help you.</h2>
+      <p>"Feeling like monke lately? Don't worry, we all have been there. Let's play some games and channel our inner
+        zen mode to calm down our monkeness!"
+      </p>
+      <button class="getStarted">Get Started</button>
+    </article>
+    <div class="illustration">
+      <img src="/img/mascot2.png" alt="">
+    </div>
+  </header>
+  <main>
+    <section class="sectionIntro">
+      <div class="sectionIntroContainer">
+        <h2>Activities</h2>
+        <p>"Sitting all day at your desk: no laughing, playing, or exercise makes you anxious, dull, and inactive. Take
+          a little time off and play with Zen Monke!"
+        </p>
+      </div>
+    </section>
+
+    <div id="cards">
+      <div class="toggleCards">
+        <span class="cardsTag defaultSwitch" id="meditating" onclick="displayCards(this.id)">Meditation</span>
+        <span class="cardsTag" id="playing" onclick="displayCards(this.id)">Coping Activities</span>
+        <span class="cardsTag" id="music" onclick="displayCards(this.id)">Listen to Music</span>
+      </div>
+    </div>
+    <section id="cardsContent">
+      <div id="meditatingCard" class="card default">
+        <div class="illustrationsTab">
+          <img src="/img/mascotMeditate.png" alt="">
+        </div>
+        <div class="intro">
+          <h2>Meditate with Me</h2>
+          <p>"Meditate With Me to calm down your inner monke and channel your mind to a more
+            productive state. I used to jump around all day and get nothing done, then I discovered meditation.
+            Meditation helps me and it'll help you too!"
+          </p>
+          <div class="buttonsContainer">
+            <button id="meditateWithMonke" class="getStarted"><a
+                href="\activities\activity1\index.html">Start</a></button>
+          </div>
+        </div>
+      </div>
+      <div id="playingCard" class="card">
+        <div class="illustrationsTab">
+          <img src="/img/mascotSleep.png" alt="">
+        </div>
+        <div class="intro">
+          <h2>Monke Sleeps a lot</h2>
+          <p> I am a monke and I don't know about you but I am not an owl. So I eat a lot and sleep a lot.
+            And that helps me cope with all the climbing and running all day long.
+          </p>
+          <div class="buttonsContainer">
+            <button id="playWithMonke" class="getStarted">Play This</button>
+          </div>
+        </div>
+      </div>
+      <div id="musicCard" class="card">
+        <div class="illustrationsTab">
+          <img src="/img/mascotMusic.png" alt="">
+        </div>
+        <div class="intro">
+          <h2>Listen to Music with me.</h2>
+          <p>Music is good. And I also like to dance to good music, or maybe sometimes
+            I like to just sit and listen to it while watching a bird on a tree, or thinking about
+            banana trees.
+          </p>
+          <div class="buttonsContainer">
+            <button id="musicWithMonke" class="getStarted">Play This</button>
+          </div>
+        </div>
+    </section>
+    <section class="sectionIntro">
+      <div class="sectionIntroContainer">
+        <h2>More Info</h2>
+        <p> "Even though we all feel like monke sometimes, it doesn't always feel the same. Learn more in-depth about
+          the ways we may feel and what can be done to combat them."
+        </p>
+      </div>
+    </section>
+    <section class="content" id="middle">
+      <div class="contentContainers">
+        <div class="illustrations">
+          <img src="img/meditation.svg" alt="">
+        </div>
+        <div class="writing">
+          <h2>Anxiety</h2>
+          <p>
+            "Anxiety is defined as a diffuse, vague, or very unpleasant feeling of fear and apprehension. The word
+            "anxiety" is derived from the Latin word i.e. "Angere", meaning to choke or strange. Meditation is one of
+            the most common techniques used to combat anxiety. Read more
+            <a href="https://raahee.in/blog/anxiety-disorder-types-symptoms-and-treatment-ypjk7z" target="_blank"> here"</a>
+          </p>
+        </div>
+      </div>
+      <div class="contentContainers" id="rightAlign">
+        <div class="illustrations">
+          <img src="img/walkingOutside.svg" alt="">
+        </div>
+        <div class="writing r">
+          <h2>Stress</h2>
+          <p>"Stress is normal when responding to a demand or threat as it keeps us safe, but if you find yourself
+            constantly frazzled in situations that don't demand it, there may be a problem. Taking time off and spending
+            it with loved ones can be some of the best ways to combat stress." Read more about it <a
+              href="https://www.verywellmind.com/stress-and-health-3145086" target="_blank">here</a>
+          </p>
+        </div>
+      </div>
+      <div class="contentContainers">
+        <div class="illustrations">
+          <img src="img/joyRideLaughing.svg" alt="">
+        </div>
+        <div class="writing">
+          <h2>Depression</h2>
+          <p>"It's natural to feel sad after experiencing a painful event. But when the feeling turns into a long term
+            one and we begin to feel helpless, sadness can turn to depression. Awareness of our social circle and
+            prioritizing our health are two common ways of coping." Read more about it <a
+              href="https://www.healthline.com/health/depression" target="_blank">here</a></p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contactContainer">
+      <p>Zen Monke is changing lives
+      <p>
+      <h2>Stay up-to-date with what we’re doing</h2>
+      </div>
+      <div class="contactForm">
+        <input type="email" name="email" id="emailId" placeholder="Enter your email address">
+        <img src="/img/icon-error.svg" alt="Error!" id="errorImg">
+        <button class="blackBtn" id="contactUs">Contact Us</button>
+        <p id="errorMessage"><em>Whoops make sure its an email</em></p>
+      </div>
+  </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+<script src="/js/app.js"></script>
+</html>
