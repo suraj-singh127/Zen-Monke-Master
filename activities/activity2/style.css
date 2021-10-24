@@ -17,7 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url(/bgFinal.png);
+    background-image: url(bgFinal.png);
     background-size: cover;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -34,7 +34,6 @@ body{
 }
 
 .slideContainer{
-    max-width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +56,8 @@ body{
     border-radius: 20px;
     padding: 2rem;
     max-height: 60%;
+    display: flex;
+    align-items: center;
 }
 
 #nextSlide{
@@ -79,6 +80,5 @@ body{
   }
 
 #nextSlide:hover{
-    color: turquoise;
     transform: scale(1.1);
 }

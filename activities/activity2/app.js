@@ -16,23 +16,31 @@ function slideIterator(slides) {
 function getObjects() {
     let obj5 = {
         imageUrl: "5.png",
-        description: "List five things you can see."
+        description: `Notice FIVE (5) things you can see in your surrounding area. 
+        These may include the blue sky, a cloud, a plant, the chair, a pen, a cup, the table, a person, or anything in your surroundings.`
     }
     let obj4 = {
         imageUrl: "4.png",
-        description: "Four things you can feel."
+        description: `Notice FOUR (4) things you can touch near you. 
+        This could be the floor, the wall, your hair, your clothes, 
+        the sweat on your palms, or the coolness of a glass of water.`
     }
     let obj3 = {
         imageUrl: "3.png",
-        description: "Three things you can hear around you."
+        description: `Notice THREE (3) sounds you can hear. This could be birds chirping in the 
+        background, construction, a car driving nearby, or music far away.`
     }
     let obj2 = {
         imageUrl: "2.png",
-        description: "Two things you can smell"
+        description: `Notice TWO (2) scents you can smell. This could include the smell of flowers nearby, your tea, 
+        fresh-cut grass, your clothes, or simply the smell of the space you are in. Can’t find anything to smell? 
+        Consider taking a short walk outside to smell nature, to the kitchen for food smells, or to the bathroom for soap.`
     }
     let obj1 = {
         imageUrl: "1.png",
-        description: "Think something positive about yourself."
+        description: `Notice ONE (1) flavor you can taste. This can be a tough one – 
+        but it can be as simple as the taste of your tongue! 
+        Can you taste the coffee from the morning, your lunch, or a mint that you had?`
     }
     let arrayOfObjs = [obj5, obj4, obj3, obj2, obj1];
     return arrayOfObjs;
@@ -54,12 +62,12 @@ function populateFilms() {
     generateHtml(slide.next().value);
     document.getElementById('nextSlide').addEventListener('click', () => {
         document.querySelector('.information').innerHTML = "";
-        let slidesInfo =slide.next();
+        let slidesInfo = slide.next();
         if (!slidesInfo.done) {
             generateHtml(slidesInfo.value);
         }
         else {
-            document.querySelector('.information').innerHTML = "Refresh to catch up from the start.";
+            document.querySelector('.information').innerHTML = "Refresh(F5) to catch up from the start.";
             document.getElementById('nextMovie').innerHTML = 'Very Good.'
         }
     });
