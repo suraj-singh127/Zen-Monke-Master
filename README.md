@@ -30,7 +30,7 @@ Zen Monke aims to fight the stigma against the topic and provide quick and simpl
 <p>It's all upto your creativity. Feel free to create issues and contribute to this repository.</p>
 
 <h1 align="center"> This is our submission for Hack This Fall 2.0 </h1>
-<img src="img/hftLogo.svg" width= 400px height= 150px>
+<img src="img/hftLogo.png" width= 400px height= 150px>
 
 ## Here The Contribution Begins🤩🎉
 
