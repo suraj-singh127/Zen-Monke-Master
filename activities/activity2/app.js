@@ -67,8 +67,9 @@ function populateFilms() {
             generateHtml(slidesInfo.value);
         }
         else {
-            document.querySelector('.information').innerHTML = "Refresh(F5) to catch up from the start.";
-            document.getElementById('nextMovie').innerHTML = 'Very Good.'
+            document.querySelector('.information').innerHTML = "Refresh(Press F5) to start again.";
+            document.getElementById('nextSlide').style.display = 'none';
+            document.getElementById('goBack').style.display = 'block';
         }
     });
 }

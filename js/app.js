@@ -38,3 +38,9 @@ function validateEmail() {
         document.getElementById('errorMessage').style.display = 'none';
     }
 }
+
+function handler(element){
+    element.classList.toggle('change');
+    let navlist = document.querySelector('.navbar');
+    navlist.classList.toggle('show');
+}

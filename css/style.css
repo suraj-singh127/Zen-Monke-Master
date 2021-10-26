@@ -11,6 +11,10 @@
     --brown: #D7A37B;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     padding: 0rem;
     max-width: 1440px;
@@ -24,7 +28,7 @@ body{
     flex-wrap: wrap;
   }
   
-  .logo h1{
+  .logo h2{
       font-size: 2.2rem;
       margin: 0;
       color: var(--brown);
@@ -32,7 +36,7 @@ body{
       transition: 0.2s;
   }
 
-  .logo h1:hover{
+  .logo h2:hover{
       transform: scale(1.1);
   }
 
@@ -81,7 +85,12 @@ body{
     align-items: center;
   }
   
-  .listItem:hover{
+  .listItem a{
+    text-decoration: none;
+    color: var(--blackCoral);
+  }
+
+  .listItem a:hover{
     color: black;
     cursor: pointer;
   }
@@ -133,21 +142,26 @@ body{
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      border-top: 1px solid var(--nuetralGray);
-      background-color: var(--primaryDarkViolet);
+      border-top: 1px solid var(--eggshell);
+      background-color: var(--blackCoral);
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
+    }
+    
+    .show .buttons a {
+      color: white;
     }
   
     .show .buttons .navbarButtons{
       font-size: 1.2rem;
       margin: 1rem 4rem;
+      color: white;
     }
   
     .show .navlist{
       display: block;
       position: relative;
-      background-color:var(--primaryDarkViolet);
+      background-color:var(--blackCoral);
       text-align: center;
       width: 100%;
       border-top-left-radius: 10px;
@@ -159,9 +173,15 @@ body{
     .show .navlist .listItem{
       font-size: 1.2rem;
       margin: 2rem;
+      justify-content: center;
     }
-    .show .navlist .listItem:hover{
-      color: var(--powderBlue);
+
+    .show .navlist .listItem a{
+      color: white;
+    }
+
+    .show .navlist .listItem a:hover{
+      color: var(--brown);
     }
   
   }
@@ -179,7 +199,7 @@ body{
       color: var(--brown);
 }
 
-  .content h2{
+  .content h1{
     font-size: 5rem;
     line-height: 99px;
     margin-bottom: 0px;
@@ -540,7 +560,7 @@ body{
   align-items: center;
   position: relative;
   color: white;
-  padding: 3rem 0rem;
+  padding: 3rem 0 1rem;
 }
 
 #contact::before{
@@ -617,4 +637,37 @@ body{
 
 .blackBtn:hover{
    background-color: var(--powderBlue);
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brown);
+}
+
+.attributions span{
+  margin: 1rem 0;
+  color: white;
+}
+
+.attributions span a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.socialIcons{
+  text-align: center;
+}
+
+.socialIcons svg{
+  width: 2rem;
+  margin: 1rem 2rem;
+  fill: white;
+  cursor: pointer;
+}
+
+.socialIcons svg:hover{
+  fill: var(--blackCoral);
 }

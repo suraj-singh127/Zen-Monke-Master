@@ -75,7 +75,9 @@ body{
      color: white;
      transition:0.2s;
   }
-
+  .button:hover{
+    transform: scale(1.1);
+  }
   @keyframes pulse {
     0%,
     100% {

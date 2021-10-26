@@ -60,7 +60,7 @@ body{
     align-items: center;
 }
 
-#nextSlide{
+.button{
     cursor: pointer;  
      margin: 0.3rem;
      background-color: var(--brown);
@@ -74,11 +74,20 @@ body{
      transition:0.2s;
 }
 
-#nextSlide:hover{
+.button:hover{
     background-color:var(--powderBlue);
     transform: scale(1.05);
   }
 
-#nextSlide:hover{
+.button:hover{
     transform: scale(1.1);
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+#goBack{
+    display: none;
 }
