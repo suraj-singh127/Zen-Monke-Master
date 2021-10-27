@@ -61,7 +61,6 @@ This project is prepared by the team Error404 in Hack the Mountains Hackathon
 Team Members
 1. <a href="https://github.com/suraj-singh127">Suraj</a>
 2. <a href="https://github.com/ahleena">Alina</a>
-3. <a href="">Sakshi</a>
 
 ## More
 
