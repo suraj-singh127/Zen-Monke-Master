@@ -17,6 +17,7 @@ Attain your state of Zen and Inner Peace through Zen Monke.”
 <p>10% of the population is said to suffer from mental health struggle. 
 
 Zen Monke aims to fight the stigma against the topic and provide quick and simple resources to cope with life’s highs and lows.
+  Checkout the submission here on  Devpost - <a href="https://devpost.com/software/zen-monke">Zen Monke</a>
 </p>
 
 ## Tech Stack
